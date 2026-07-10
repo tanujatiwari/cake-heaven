@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'Artisan Baker | Product Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fff8f4",
+                    "primary-fixed-dim": "#e1c1a4",
+                    "surface-variant": "#f1dfd0",
+                    "on-surface-variant": "#4e453d",
+                    "on-secondary-fixed-variant": "#484828",
+                    "inverse-on-surface": "#ffeee0",
+                    "surface": "#fff8f4",
+                    "surface-dim": "#e9d7c8",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#fff1e7",
+                    "on-secondary-fixed": "#1d1d03",
+                    "secondary-container": "#e6e5b9",
+                    "on-background": "#231a11",
+                    "secondary-fixed": "#e6e5b9",
+                    "outline-variant": "#d2c4ba",
+                    "primary-container": "#4b3621",
+                    "background": "#fff8f4",
+                    "secondary": "#60603e",
+                    "on-primary-container": "#bd9f83",
+                    "inverse-surface": "#392f24",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#231a11",
+                    "primary": "#33210d",
+                    "surface-container-high": "#f7e5d6",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#ffd9e2",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#fdebdb",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#50313a",
+                    "inverse-primary": "#e1c1a4",
+                    "surface-container-highest": "#f1dfd0",
+                    "tertiary": "#371c25",
+                    "primary-fixed": "#fedcbe",
+                    "on-primary-fixed": "#291806",
+                    "on-primary-fixed-variant": "#59422c",
+                    "surface-tint": "#725a42",
+                    "secondary-fixed-dim": "#cac99f",
+                    "on-tertiary-fixed-variant": "#5e3e47",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#c299a3",
+                    "on-secondary-container": "#666643",
+                    "tertiary-fixed-dim": "#e7bbc6",
+                    "outline": "#80756c",
+                    "on-tertiary-fixed": "#2d141c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "stack-sm": "12px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "stack-md": "32px",
+                    "stack-lg": "64px",
+                    "gutter": "32px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "display-lg": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "label-md": ["Montserrat"],
+                    "headline-sm": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "700"}],
+                    "label-md": ["13px", {"lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+                    "headline-sm": ["22px", {"lineHeight": "28px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cream-space { background-color: #fff8f4; }
+        .shadow-ambient { box-shadow: 0px 4px 24px rgba(51, 33, 13, 0.04); }
+        .shadow-lifted { box-shadow: 0px 12px 48px rgba(51, 33, 13, 0.06); }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed-dim selection:text-primary min-h-screen">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-desktop py-5 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-sm text-primary tracking-tight cursor-pointer">L'Artisan Baker</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 transition-all duration-300" href="#">Cakes</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Pastries</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Cookies</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-primary text-white px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity shadow-sm">
+                    Contact Us
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="max-w-[800px] mx-auto px-margin-desktop pt-24 pb-20 text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Our Curated Gallery</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            A celebration of artisanal craftsmanship. Each creation is handcrafted daily using premium organic ingredients and local wildflower honey.
+        </p>
+</header>
+<!-- Featured Highlight Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-stack-lg">
+<div class="relative group overflow-hidden rounded-2xl shadow-ambient bg-surface-container-low h-[600px] flex items-end">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A professional high-resolution photograph of a tiered artisanal birthday cake decorated with delicate edible pressed flowers and soft honey-colored buttercream frosting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdPoHaopiUkDCc4b-ESPuXyqXaX7LYz3HIbvf2BwGxFlHCpsuNCzY4ve-sfXLf37wZr86ohPXPOrsHh5GBTNQuYpMRhoBCvS_RuaFn7tC24dYUj5f4szmZ1m17ZG0ou4sOjl4Mz-16Nx4wmT2R49lC3jsXW1ljlGBl_plhSegffrfWoB1Kd5F_rm0aEVn7WwTgvY6kwCfduElDIk_iBNOrG_tKRCCJ4goQ3VksxuYI7JXD-y6v3jOdpbZyL5nnng5ZS9QweNOuIx8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="relative p-12 z-20 text-white max-w-xl">
+<span class="font-label-md text-[11px] uppercase tracking-widest mb-4 inline-block opacity-80">Featured Selection</span>
+<h2 class="font-headline-md text-4xl mb-4">Artisanal Birthday Cakes</h2>
+<p class="font-body-md text-body-lg opacity-90 mb-6">Celebrate life's milestones with our signature multi-layered floral designs, customized for every unique story.</p>
+<button class="bg-white text-primary px-8 py-3 rounded-full font-label-md hover:bg-surface transition-colors">Learn More</button>
+</div>
+</div>
+</section>
+<!-- Main Product Grid -->
+<main class="max-w-container-max mx-auto px-margin-desktop py-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">The Full Collection</h3>
+<p class="font-label-md text-on-surface-variant uppercase tracking-wide">Refined Patisserie</p>
+</div>
+<div class="flex gap-8 border-b border-outline-variant/30 pb-2">
+<button class="font-label-md text-label-md text-primary border-b-2 border-primary -mb-[10px]">All Items</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Cakes</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Pastries</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Gifts</button>
+</div>
+</div>
+<!-- Unified 3-Column Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-gutter gap-y-20">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 shadow-ambient transition-all duration-500 group-hover:shadow-lifted">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Anniversary cake with gold leaf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXqxM6y3U8V0dTqBZM3FxKojfGnHhD1ZmJecr9vGZQYhvlXxPyDfipbRa93nzLWki7hyD_GeGx6NQz-decpjtXXGDWjRPeaHR_X4uSsVZBRvmM93Rsu7Y21Wdz9hwpJLTBRwIYsZM34p5DQtncMZGAZj_K_c9QqBBrSahXOULFDfiGmjiGhkfIYgyyHnXJDG_u4xn1uYhJx4dDQD_GF6g56Nb9ZhS9xA2-w26QMDp6yK_dO_Fprxi5BkR469iYd8rWk5YtMnaaxV0"/>
+</div>
+<div class="px-1">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-headline-sm text-primary">Anniversary Classic</span>
+<span class="font-body-md text-on-surface-variant">$95</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Timeless elegance with smooth white chocolate ganache and gold-leaf accents.</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 shadow-ambient transition-all duration-500 group-hover:shadow-lifted">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Pistachio and Lemon cake" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXdBvM-w71cvfYeav2AEZLJz-S2Xgqp9WZNoV1RQZ4_o6KH6LBYzhA6Y8AFaYkP4K00Pybqf-jdcGfNDyGzLtu8LYXEgT0uaj15VnW1CBDd3-3QReZylwSquFVBQfNzJPJJObUqIPxqUUKk0hEokwPxb4s2s5Qe18Hrki2cpgTPXKFpbEmtB5-zlFL5Og8I96ufal-P1kFav8hiJMuR2gPfuZZwcOE1RYOC0DkX2FNQRVL3O7dhqor2uAEHFvaUlfpePu1Aiii1Kc"/>
+</div>
+<div class="px-1">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-headline-sm text-primary">Pistachio &amp; Lemon</span>
+<span class="font-body-md text-on-surface-variant">$85</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Zesty lemon curd paired with earthy Persian pistachio sponge layers.</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 shadow-ambient transition-all duration-500 group-hover:shadow-lifted">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Honey Croissants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD38x-vnX2BPG-NapVR63Q26xjyHng6bvTRUc5hMQAW89D-pcMXzpSW4MecxJ5w31SIFgBNcmEXH80uRV7LWPviTJ9oxw06f_qQQ_CSeORShaAu6yWDszFTf3sENycA8S7QK3RDvdqBniv3EasH2LV01Braak3GlQKGsF2x_QwDDGefwqa6lDXNG_qmL5JxCUA-n-Y9Di9e-XU1YXCJGntvZ7qh6xaYjFJiFlLm4K1VBOpFShi9StjybQF1dzS6AsziZ4NishjEyLk"/>
+</div>
+<div class="px-1">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-headline-sm text-primary">Honey Croissant</span>
+<span class="font-body-md text-on-surface-variant">$6</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed">72-hour fermented dough glazed with local organic wildflower honey.</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 shadow-ambient transition-all duration-500 group-hover:shadow-lifted">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Midnight Sea Salt Cookies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8h_h8yxl9434Jg1ht9iHcJW5UAv7cpgqTcgGOpoLXNrIrx05OVf6N1ISyvPVHCH53dyL2eq-dlpmCECU2IdytDHCW3H9ZwkirTq8YcPsDh-Ua109BYmaAtMUWLMXxH9qO7WGC0fYn3OlzlVEKhQjKuU1cvsjeb_t0zBHyqhWkzm4-RZezttyc8GjuBbvu_yR2AvVr3vqfYKO6KiLeLgKfXgKTbiv_gz5iVGHjMME5yN_loIie3_5bkjy7-OPcuklRW4ayjvL56Ls"/>
+</div>
+<div class="px-1">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-headline-sm text-primary">Midnight Sea Salt</span>
+<span class="font-body-md text-on-surface-variant">$24</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed">70% dark Valrhona chocolate cookies with smoked Maldon flake salt.</p>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 shadow-ambient transition-all duration-500 group-hover:shadow-lifted">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Raspberry Rose Tart" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvH-6V-6yQaqCBkjMdjWmjJHbBAGLUn3h1t0qCsjLlRbhhG67tvVvoLWLVumL-EhTFcF74nQ9bxYoPYOLuO9PpGFg6ov9b1BPLXvoE1BWZCo91hKAvFOaITB-Jr7vJo5x3TTQCu3Vo1grfgghi_Sx7WnOgHWMONUPTtsZ71s8LfXdEKDHWXiXBwo35zZGtUhM6SZhQqMuBBtxu3BqZBzm8hNOgbbRAZLKaVwM1DiEFPumQFcAi1Buh_LhwasF5-OI7n3hNEZ2tktI"/>
+</div>
+<div class="px-1">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-headline-sm text-primary">Raspberry Rose Tart</span>
+<span class="font-body-md text-on-surface-variant">$12</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed">French pastry shell filled with vibrant raspberries and rosewater cream.</p>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 shadow-ambient transition-all duration-500 group-hover:shadow-lifted">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rustic Harvest Cake" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd3FM4tziVIXACE8xRCpqyiv-Duyv-NeHPN0IV8jhiwjWXT2tWwp_chol6P3zPbAJ4QJuNizjjbo9W4yoTIgmX2JmaWVOLKHpbgbdtK6a6cp7OXcKhjzI-FFKa2uoEqaB2pO14X_dnNOwSX87-xkB5UQBJ8wWFS1CPO_wK0bD1f8LoL8OqpfeVLcYFB78lzI0vL2WTIDxpPDrNj46jJedBLT3FAfUvcjp7js5uorrdlUvp9UzeKUgN77kHLw4l3G0oRHLzPwe4_bo"/>
+</div>
+<div class="px-1">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-headline-sm text-primary">Rustic Harvest</span>
+<span class="font-body-md text-on-surface-variant">$78</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Naked sponge cake adorned with fresh seasonal figs and dark honey.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Refined CTA Section -->
+<section class="bg-surface-container-low py-24 mt-20 border-t border-outline-variant/20">
+<div class="max-w-[700px] mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Join Our Secret Menu</h2>
+<p class="font-body-md text-on-surface-variant mb-10 leading-relaxed">Get early access to seasonal collection drops and invitation-only tasting events at our boutique kitchen.</p>
+<form class="flex flex-col sm:flex-row gap-3">
+<input class="bg-white border border-outline-variant/50 focus:ring-1 focus:ring-primary focus:border-primary px-6 py-3 rounded-full flex-grow font-body-md outline-none" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-white px-10 py-3 rounded-full font-label-md hover:bg-primary-container transition-colors shadow-md whitespace-nowrap">Subscribe</button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest py-16">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-desktop max-w-container-max mx-auto gap-12">
+<div class="max-w-xs">
+<div class="font-display-lg text-headline-sm text-primary mb-4">L'Artisan Baker</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Handcrafting moments of sweetness with tradition, care, and the finest organic ingredients.</p>
+</div>
+<div class="grid grid-cols-2 gap-x-16 gap-y-4">
+<a class="font-label-md text-xs text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-xs text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-md text-xs text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping Info</a>
+<a class="font-label-md text-xs text-on-surface-variant hover:text-primary transition-colors" href="#">Wholesale</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-12 pt-8 border-t border-outline-variant/10 text-center md:text-left">
+<p class="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest opacity-60">© 2024 L'Artisan Baker. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

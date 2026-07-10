@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'Artisan Baker | Handcrafted Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#1d1d03",
+                    "on-secondary-container": "#666643",
+                    "on-primary-fixed": "#291806",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#d2c4ba",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#cac99f",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#f1dfd0",
+                    "secondary-container": "#e6e5b9",
+                    "surface-container-high": "#f7e5d6",
+                    "secondary-fixed": "#e6e5b9",
+                    "background": "#fff8f4",
+                    "primary-fixed-dim": "#e1c1a4",
+                    "tertiary": "#371c25",
+                    "on-tertiary-fixed-variant": "#5e3e47",
+                    "secondary": "#60603e",
+                    "surface-container": "#fdebdb",
+                    "on-secondary-fixed-variant": "#484828",
+                    "on-surface-variant": "#4e453d",
+                    "surface-bright": "#fff8f4",
+                    "on-tertiary-fixed": "#2d141c",
+                    "on-primary-container": "#bd9f83",
+                    "on-surface": "#231a11",
+                    "inverse-surface": "#392f24",
+                    "inverse-on-surface": "#ffeee0",
+                    "on-background": "#231a11",
+                    "surface-dim": "#e9d7c8",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#c299a3",
+                    "tertiary-container": "#50313a",
+                    "primary": "#33210d",
+                    "surface-container-highest": "#f1dfd0",
+                    "primary-fixed": "#fedcbe",
+                    "error": "#ba1a1a",
+                    "outline": "#80756c",
+                    "surface-container-low": "#fff1e7",
+                    "surface": "#fff8f4",
+                    "primary-container": "#4b3621",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#725a42",
+                    "tertiary-fixed": "#ffd9e2",
+                    "inverse-primary": "#e1c1a4",
+                    "tertiary-fixed-dim": "#e7bbc6",
+                    "on-primary-fixed-variant": "#59422c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "stack-sm": "12px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Montserrat"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Montserrat"],
+                    "label-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .scale-102:hover { transform: scale(1.02); }
+        .honey-gold-btn {
+            background-color: #FFC000;
+            color: #33210d;
+            transition: all 0.3s ease-in-out;
+        }
+        .honey-gold-btn:hover {
+            background-color: #e6ad00;
+            transform: scale(1.02);
+        }
+        .split-image-mask {
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        }
+        @media (max-width: 768px) {
+            .split-image-mask { clip-path: none; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="w-full top-0 sticky bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-on-surface-variant shadow-sm z-50">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed tracking-tight cursor-pointer transition-all duration-300 ease-in-out" href="#">
+                    L'Artisan Baker
+                </a>
+<div class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 cursor-pointer transition-all duration-300 ease-in-out" href="#">Cakes</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed cursor-pointer transition-all duration-300 ease-in-out" href="#">Pastries</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed cursor-pointer transition-all duration-300 ease-in-out" href="#">Cookies</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed cursor-pointer transition-all duration-300 ease-in-out" href="#">About Us</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block border-[1.5px] border-primary px-6 py-2 rounded-full font-label-md text-label-md text-primary hover:bg-surface-variant transition-all duration-200">
+                    Contact Us
+                </button>
+<button class="honey-gold-btn px-6 py-2 rounded-full font-label-md text-label-md font-bold shadow-md">
+                    Schedule a Meeting
+                </button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Split-Screen Hero Narrative -->
+<section class="min-h-[calc(100vh-80px)] flex flex-col md:flex-row overflow-hidden">
+<!-- Left: High-Quality Vertical Narrative Image -->
+<div class="w-full md:w-1/2 relative min-h-[400px] md:min-h-0">
+<div class="absolute inset-0 bg-cover bg-center split-image-mask" data-alt="A masterful, cinematic vertical photograph of an artisanal baker in a sun-drenched rustic kitchen, hands dusted with flour as they gently shape a sourdough loaf. The scene is bathed in warm, golden morning light that emphasizes the organic texture of the wood table and the soft steam rising from a nearby cooling rack of pastries. The color palette features deep chocolate browns, rich honeys, and soft cream tones, reflecting a high-end, premium boutique bakery atmosphere. Every detail is captured with sharp precision and a shallow depth of field." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCeGr21G9nGdWTytALF_25c0zE0YbaCqio3tP0EJEB2FuDc7D3Hzo-EBj3LRzpFXyHkGrW9P2SPzSqypCgl8o2K7mFnXSRVpMIjUVX26EHU1bAaWNYwXCKwEcbRkZ2vJzzuFqIa0rEs95ZEhmbbOqhhjBqKnuaBWUfe3wJtulOW7L2g-WJsmA4GdVC3sndSk-VKRK3zndPxxOSDA3Mkxwjd9JGivcRt31HtAiQIqpMi53V4ilsx73sWLPIR8nGx-pBfgv3vQx0dVNI')">
+</div>
+<!-- Subtle overlay for branding feel -->
+<div class="absolute inset-0 bg-primary/5 mix-blend-multiply md:hidden"></div>
+</div>
+<!-- Right: Warm, Text-Rich Introduction -->
+<div class="w-full md:w-1/2 flex items-center justify-center p-8 md:p-margin-desktop bg-surface-container-low">
+<div class="max-w-xl space-y-stack-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-variant rounded-full text-primary">
+<span class="material-symbols-outlined text-[18px]">temp_preferences_custom</span>
+<span class="font-label-md text-xs uppercase tracking-widest">Est. 1994</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
+                        The Art of <br/> <span class="italic font-normal">Slow Baking</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        At L'Artisan Baker, we believe time is our most vital ingredient. Our signature sourdough starters have been nurtured for three decades, and our pastries are laminated over forty-eight hours to achieve the perfect, honey-combed crumb.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80 border-l-2 border-secondary/30 pl-4">
+                        We reject the rush of the modern world in favor of artisanal precision. From our hand-painted wedding cakes to the simplest butter croissant, every creation is a testament to the beauty of patient craftsmanship.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="honey-gold-btn px-8 py-4 rounded-full font-label-md text-label-md font-bold shadow-lg flex items-center gap-2">
+                            Explore Menu
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border-[1.5px] border-primary px-8 py-4 rounded-full font-label-md text-label-md text-primary hover:bg-surface-variant transition-all duration-300">
+                            Schedule a Meeting
+                        </button>
+</div>
+<div class="pt-8 flex items-center gap-6">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a smiling customer in a bright, modern bakery setting, capturing a candid moment of joy and luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnBPO48R_MHq45j8WJG2P9HI42RFpSuyUpEFlaeBaf98iH3-6YlZhT590Xiu7xI6hAcKOnkcUhDCDFKWEsq_lzau2e1A7tkHldMwXT3UEB8pK0Fd0MZF02Q1clR5v1rm7IxCxqSUY1NS9StP0DhxbwQc-yO34MnSzKdM1-67WLrJ7lvHRjcBT3SgQLBqGTSNkm4ZMEkpW4fV-91KH1VMVCBBxZAeOE2TFqJg2fPzEjU_-LQHf0wmos0U3BXm6oVw_pZ9xXiTzsZfs"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-slate-300 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A close-up portrait of a pastry chef in a clean white uniform, focused on delicate work, representing expertise and craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBrhYV5CF6x1XtgpTzMWi1JcRVtmKn2Ph-DHp3QHkOdyyDyEh7Mr5YerFlDmCU9IZQBdxYyTcqh-UtcOzsqF8bYDGheX0FIl1Glrnb3jQafd9I1BJx6JZVbjgmMF2afKygjeJoDIwbckl8AFWzE3o_avYr9dUSkXpRcFJD756H0HoK2p8Z-9FgUn6FVbyWbl2xlkfZmUbUIKCHhmiNBmS2E61DDi27F-o2HAaVSlu-wkeOZSH1dxYiXvqyUNPzFtXMTUKXfE-6hQw"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-slate-400 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of an elderly gentleman enjoying a pastry in a high-end cafe, with soft bokeh background lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKkfjlG4unElIhTf-6k4TzAZTiS_0bOJ5EfUB09sMn_QkLI7nKoIH8HuAU1mbrvNzXWMlHJBFKf7S1upMjh9LXW6u1AN5WFeYjL3f9n4rV5wUPgyNoLcYVg1SYFutMJdrxJta05FidlnqNZEwIUTU6NLMgO1JO75oCnJeirTpGDCi2VMhgrJH9Z0tgYzQD7-WcQj56Azs6c21lT4Xh-CtwtbpqXCXjSaJz1ZMvogeSwLHbmms9a1pjW44jxdYXMpGrs12aHP7ttvM"/>
+</div>
+</div>
+<p class="text-xs font-label-md text-on-surface-variant">
+                            Trusted by <span class="font-bold text-primary">500+</span> regular connoisseurs
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Collections Bento Grid -->
+<section class="px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary">Our Signature Collections</h2>
+<div class="h-1 w-12 bg-secondary mx-auto mt-2"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Bento Item 1 -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[400px] shadow-sm hover:shadow-md transition-shadow">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="A breathtaking flat lay of various French pastries, including pain au chocolat, almond croissants, and fruit tarts, arranged artfully on a marble surface. The lighting is soft and diffused, creating a luxurious, morning-in-Paris aesthetic with warm neutral tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBS24jGmE6cCrkvd5nWyDXF_KKA3e71NP_OgrbqXsEAW_vZDaERrNzTb6XlFF9RPPY_vb7UuPUHihdvxPWwSMEUCpmHMpeRz2NDlv8RHNosA8-2Dlz_TkNKHzSx2C4uGw6_J1z3pfHj9y145rtEY3jM0JBBdC9aNYBTTNji_oQ2md-CKmngotrv1DZRb4jpnZLmvyyfZ31I8oP-jlwDkUQSo8Q5Eivb3q0fiaLDUP80_8K9RX7rOsLgWdAuEGRw7h9B0ngCVnHJZ_8')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<span class="bg-secondary px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold mb-2 inline-block">Bestseller</span>
+<h3 class="font-headline-sm text-headline-sm">The Morning Viennoiserie</h3>
+<p class="font-body-md text-white/80 mt-2">Freshly laminated daily at 4:00 AM.</p>
+</div>
+</div>
+<!-- Bento Item 2 -->
+<div class="md:col-span-4 bg-surface-container-high rounded-xl p-8 flex flex-col justify-between shadow-sm border border-outline-variant/30">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4">cake</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Custom Celebration Cakes</h3>
+<p class="font-body-md text-on-surface-variant">Tailored designs for life's most precious milestones. Each cake is a unique masterpiece of flavor and form.</p>
+</div>
+<a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">
+                        Inquire Now <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<!-- Bento Item 3 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl h-[300px] shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="A detailed macro shot of a rich, tiered chocolate cake decorated with gold leaf and edible flowers. The aesthetic is extremely sophisticated and moody, with dark chocolate colors and soft, ambient lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCN3TtwpiXzluMO2OZGjnxWd9Md3Sb3HVF58fVKCpXxlVCwIMyjIUnES_5ADJUFM9YBOZLmIxyZyXmnH1oG3Wt2DkahuzLQ-Nb62soU0xVFQ1yY5avF_pyLQJFrPECGrIELnFaZWtwb8_iamCFdAzPcnVwme9iMSS3d964kJIjQubKt7033tKKHVere33g7nHEYwTor7LQxSH1KH6_0SMRMiuzy_zpjvlfPDy7Ow1lei4OLreZ6RmCSsWQd8LdL3N2aUuTEVgMtcgA')">
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<h3 class="font-headline-sm text-headline-sm text-white text-center px-4">Artisanal Cakes</h3>
+</div>
+</div>
+<!-- Bento Item 4 -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[300px] shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="An atmospheric photo of a wooden table covered with freshly baked sourdough loaves, artisanal flours, and baking tools. The lighting is warm and rustic, evoking a feeling of traditional craftsmanship and heritage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzp32Ctypxg2vP-Ebbu5vb4xTYctiRCCV5jNnT_9vzrihLpdIAoLGJ9WP9tFomvQ9s-2QEi5RZPBY4Z_3GPpUdW8rl2PUSSUD60wpxqMzbW1ttOTi5wkfSeqLV6WR4QM9MkPkM3JAyUBid3V9fcv_JBpzAuIVmcM6Azt0ab7R-0gagkrQ4dUj8PTW5bNF98JZa8Lp28N4aP64OTPn3yOZa8J_jWKQp0pu79Z2jTUYR2-hik2pawaOb3hJaTwMlpHI-K5J0KKyS1r0')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+<div class="absolute inset-y-0 left-0 p-8 flex flex-col justify-center text-white max-w-md">
+<h3 class="font-headline-sm text-headline-sm">Wholesale Partnerships</h3>
+<p class="font-body-md text-white/90 mt-2">Supplying the city's finest restaurants and hotels with bread of unparalleled quality.</p>
+<button class="mt-6 border border-white px-6 py-2 rounded-full w-fit hover:bg-white hover:text-primary transition-all">Learn More</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Section -->
+<section class="bg-surface-container py-stack-lg border-y border-outline-variant/20">
+<div class="px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-stack-lg">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Our Commitment to Terroir</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        We source our grains from single-estate farms where biodiversity and soil health are paramount. This dedication to "Terroir" ensures that every bite of our bread carries the unique character of the land.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">eco</span>
+<span class="font-label-md text-on-surface">100% Organic</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">local_shipping</span>
+<span class="font-label-md text-on-surface">Local Sourcing</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">history</span>
+<span class="font-label-md text-on-surface">Heritage Grains</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">favorite</span>
+<span class="font-label-md text-on-surface">Made with Love</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+<div class="rounded-xl overflow-hidden aspect-square shadow-lg transform translate-y-4">
+<img class="w-full h-full object-cover" data-alt="Close-up of golden wheat fields swaying in the breeze under a warm sunset, emphasizing natural origins and premium quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQdbgzsIFOCqvlM00qa8pyqj9inEayLDg7kbSt1I7YcSn5JTqGbelBuP5twUjompjQmLamk-wB2zCTj0oZBEJVfUasbILV74NB46NTNwpSw2hMH001wRh3N2GqKscfvo46xQ4R3pfPsul2eJN8lELh-KGk3JD77mCCNYEfx4EoaVmcpi-qpkRBxUqH8B1HQP8CIZV9SkY1bxEX4QzBt1MVdRwpdvooELc1JKK2cMZir5H1NeRGrUm2MGn6RxxspdZQUbfSAvCrFZA"/>
+</div>
+<div class="rounded-xl overflow-hidden aspect-square shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A focused shot of flour being sifted onto a wooden surface, with fine dust particles dancing in a beam of light, symbolizing the precision and purity of ingredients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJgN7KcGZBLf-tUJC95ar1dW-dwl-dDqm4h6lgc-2LwaRafC_eCbbhSgPm_-N57ccipKA8fE9y58tnI6Su2e11PKPoSLrOKIJqOB5znKdJqt2VVsBbZ8r7hysr-YbhsuulfIlia-BmVTAQpePQnD5RDbMkcAiqnvam7DvbmoOpwDxGOjW8e2pzqoCmZfa-Y6ycxJQrWxXPCW13ro7OVuEdXQkcI2rvY3FHytRU2fVWQiaZCHM944MQl1SWunWvralrbs-fib2ssaU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Contact Teaser -->
+<section class="py-stack-lg px-margin-desktop text-center">
+<div class="max-w-3xl mx-auto space-y-6">
+<span class="text-secondary font-label-md uppercase tracking-[0.2em]">Join the Atelier</span>
+<h2 class="font-display-lg text-headline-md text-primary">Be the first to taste our seasonal releases.</h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<input class="w-full max-w-sm rounded-full border-outline bg-surface px-6 py-4 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all" placeholder="Enter your email" type="email"/>
+<button class="honey-gold-btn px-10 py-4 rounded-full font-label-md text-label-md font-bold whitespace-nowrap">Subscribe</button>
+</div>
+<p class="text-[12px] text-on-surface-variant font-body-md">By subscribing, you agree to our Privacy Policy and to receive marketing emails.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-stack-lg bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-stack-md max-w-container-max mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed">L'Artisan Baker</span>
+<span class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant">© 2024 L'Artisan Baker. Handcrafted with love.</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-secondary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-secondary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-secondary transition-colors duration-200" href="#">Shipping Info</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-secondary transition-colors duration-200" href="#">Wholesale</a>
+</div>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth reveal on scroll interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Instant activation for hero since it's above the fold
+        const hero = document.querySelector('section');
+        if(hero) {
+            hero.classList.remove('opacity-0', 'translate-y-10');
+        }
+    </script>
+</body></html>

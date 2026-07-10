@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story | L'Artisan Baker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#231a11",
+                    "tertiary": "#371c25",
+                    "on-primary-fixed-variant": "#59422c",
+                    "surface-container": "#fdebdb",
+                    "outline": "#80756c",
+                    "on-secondary-fixed-variant": "#484828",
+                    "on-primary-fixed": "#291806",
+                    "on-surface-variant": "#4e453d",
+                    "surface-container-highest": "#f1dfd0",
+                    "surface": "#fff8f4",
+                    "primary": "#33210d",
+                    "secondary-fixed": "#e6e5b9",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#392f24",
+                    "surface-container-low": "#fff1e7",
+                    "primary-fixed-dim": "#e1c1a4",
+                    "tertiary-fixed-dim": "#e7bbc6",
+                    "secondary": "#60603e",
+                    "primary-fixed": "#fedcbe",
+                    "on-tertiary-fixed": "#2d141c",
+                    "surface-variant": "#f1dfd0",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#e9d7c8",
+                    "on-secondary-fixed": "#1d1d03",
+                    "secondary-container": "#e6e5b9",
+                    "outline-variant": "#d2c4ba",
+                    "on-tertiary-fixed-variant": "#5e3e47",
+                    "inverse-primary": "#e1c1a4",
+                    "inverse-on-surface": "#ffeee0",
+                    "background": "#fff8f4",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#666643",
+                    "tertiary-fixed": "#ffd9e2",
+                    "on-primary-container": "#bd9f83",
+                    "surface-tint": "#725a42",
+                    "on-tertiary-container": "#c299a3",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#50313a",
+                    "surface-container-high": "#f7e5d6",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fff8f4",
+                    "secondary-fixed-dim": "#cac99f",
+                    "primary-container": "#4b3621",
+                    "on-surface": "#231a11",
+                    "on-secondary": "#ffffff",
+                    "honey-gold": "#FFC000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "stack-sm": "12px",
+                    "stack-lg": "48px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "stack-md": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "label-md": ["Montserrat"],
+                    "display-lg": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-md": ["Montserrat"],
+                    "headline-sm": ["Playfair Display"],
+                    "body-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(51, 33, 13, 0.2);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-surface/80 backdrop-blur-md transition-all duration-300">
+<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary tracking-tight cursor-pointer">
+                L'Artisan Baker
+            </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-300 font-label-md text-label-md" href="#">Our Story</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">The Bakery</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Sourcing</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary text-2xl hover:scale-110 transition-transform">shopping_bag</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 hover:scale-105" data-alt="A sun-drenched, high-end artisanal bakery interior with high ceilings, soft cream-colored stone walls, and warm golden lighting. Fine mist of flour hangs in the morning light beams. Elegant minimalist wooden shelving displays perfectly golden crusty loaves of bread. The atmosphere is quiet, sophisticated, and deeply welcoming with a premium chocolate-brown color palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAELe0Jvi5iGO7pVLX_9CEZjpUoWtWk6gnf6Th9D7vR_pZ9FbqdTWOS_-UkRHp3rCzI0ogJFnhJUmT2Ft5g2sR-r7MwP8HzSdWUlet1l-KHyKfRDjSZhHbL-8Thdx2tRZmcvkCaXuq_d88Z0Wv3hj1z7LXudZj1vGANnwwuq96Z18oAYDvLqdRQHe2CVuDODek8a9hZ5pBH46n6LbDOQjlcArdhJghq3NqjBc-7VF6R3YYWkk80BflgLyWMjRsKNH88ShlqYb45Hlc')"></div>
+<div class="absolute inset-0 bg-primary/20 backdrop-brightness-95"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile reveal active">
+<p class="font-label-md text-label-md text-surface uppercase tracking-[0.2em] mb-4">Est. 1994</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-surface text-shadow-sm max-w-3xl mx-auto">
+                    The Art of <span class="italic font-normal">Patience</span> &amp; Flour
+                </h1>
+</div>
+</section>
+<!-- Section 2: Narrative "Our Story" -->
+<section class="py-stack-lg md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+<div class="order-2 md:order-1 reveal">
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Our Story</h2>
+<div class="space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            For over three decades, L'Artisan Baker has stood as a quiet sanctuary for those who appreciate the poetry of a slow fermentation and the honest weight of a handcrafted loaf. Founded in the hills by Julian Vane, our bakery operates on a singular, unwavering principle: that true quality cannot be rushed.
+                        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed italic">
+                            "The dough is a living thing," Julian often says. "It breathes, it matures, and it remembers. If you treat it with respect, it rewards you with flavor that time alone can unlock."
+                        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Our 30-year heritage is woven into every starter and every crust. We embrace the "slow-bake" philosophy—not as a marketing term, but as a daily meditation on the relationship between earth, hand, and oven.
+                        </p>
+</div>
+</div>
+<div class="order-1 md:order-2 reveal h-[500px] md:h-[700px] rounded-lg overflow-hidden shadow-xl shadow-primary/5">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A close-up, atmospheric shot of an elderly master baker's weathered, flour-dusted hands kneading a large mound of elastic sourdough dough on a thick wooden table. The lighting is low and dramatic, highlighting the texture of the flour and the veins in the baker's hands. Soft cream and chocolate brown tones dominate the frame, conveying a sense of heritage and artisanal precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkKO75STzcxI4S-5s3O56S-iDOpgeb-B1P3KUV_W_RbjW0prVpm63bWyr2yB7BC9x6taImEOunjt-DfQeZKKMVCjQBXfWh3N0TptjfR8llD1THl4SvuAqLaKwKFGh7fNe2vS3KYhk2zStyfTBJcMfQ4rRbF6c6dpnn_9oSwLEDJDTO3yOHNyzcXeu8PuAvwGYQ0WJFh1Iqs596BIl4FOorM4BZLPb_wjVFCQKzk7NKdYuze0eo0CLEJNv6jYCfRcM_TZ0yMfWeZUw"/>
+</div>
+</div>
+</section>
+<!-- Section 3: Process & Values (Bento-style 3 columns) -->
+<section class="bg-surface-container-low py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">The Pillars of our Atelier</h2>
+<div class="w-16 h-[2px] bg-honey-gold mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Column 1 -->
+<div class="reveal flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-primary group-hover:text-surface">
+<span class="material-symbols-outlined text-3xl">history_edu</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Artisanal Heritage</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                            Preserving the time-honored techniques of French Boulangerie, passed down through generations of master craftsmen.
+                        </p>
+</div>
+<!-- Column 2 -->
+<div class="reveal flex flex-col items-center text-center group" style="transition-delay: 100ms;">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-primary group-hover:text-surface">
+<span class="material-symbols-outlined text-3xl">eco</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Organic Sourcing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                            We partner exclusively with stone-millers and local organic farms that share our commitment to biodiversity and soil health.
+                        </p>
+</div>
+<!-- Column 3 -->
+<div class="reveal flex flex-col items-center text-center group" style="transition-delay: 200ms;">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-primary group-hover:text-surface">
+<span class="material-symbols-outlined text-3xl">hourglass_empty</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Slow Fermentation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                            Each loaf undergoes a minimum 72-hour cold fermentation process, ensuring superior digestibility and a complex, nutty crumb.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: "The Atelier" (Full width quote) -->
+<section class="relative py-32 md:py-48 flex items-center justify-center text-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-fixed bg-center" data-alt="A wide, atmospheric view of a professional, minimalist bakery kitchen at dawn. The space is filled with industrial stainless steel tables, wooden proofing baskets (bannetons), and large deck ovens. The lighting is soft and moody, with a hazy atmosphere of flour and steam. The aesthetic is clean and high-end, featuring neutral cream and deep chocolate tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArLsm-inWATGXfPW16PWAh2AU4VNFbBqF3Q9WD1Q718wdJ_ENGbXN8IF5PiSOuLDsYE3xX_E_Def_DC1KYeqKvnkZEVYLt3wz7IlFeF9CKBJrxbTPTS1HQEYzXJoxen2O7sUH1-iNRsiEoNJYsbxMfLztvN9sHvmXkzGz1BIj_S_U2RoZgbEFip3B4U5vaH9D5CQPd2cSwVD7pFeYh4rkbmfaYQazKQea2kacLKCH_KlLEB27zbqPoVNIjDDFkvwypaUw0-9P46Fg')"></div>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 px-margin-mobile reveal">
+<div class="mb-8 flex justify-center">
+<span class="material-symbols-outlined text-surface text-5xl opacity-50">format_quote</span>
+</div>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-surface italic font-normal max-w-4xl mx-auto leading-tight">
+                    "We don't just bake; we compose <span class="font-bold not-italic">edible poetry</span>."
+                </h2>
+<p class="font-label-md text-label-md text-surface uppercase mt-12 tracking-[0.3em]">The L'Artisan Promise</p>
+</div>
+</section>
+<!-- Section 5: Call to Action -->
+<section class="py-24 px-margin-mobile flex flex-col items-center text-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-8 reveal">Experience the Collection</h3>
+<div class="reveal">
+<a class="inline-flex items-center gap-4 bg-honey-gold text-primary font-bold px-10 py-5 rounded-full hover:scale-105 active:scale-95 transition-all shadow-lg shadow-honey-gold/20 font-label-md text-label-md" href="#">
+                    VISIT OUR GALLERY
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<p class="mt-8 font-body-md text-body-md text-on-surface-variant max-w-md reveal italic">
+                Discover our signature pastries, seasonal tarts, and heritage loaves.
+            </p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-low border-t border-outline-variant">
+<div class="flex flex-col items-center gap-stack-md px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm text-primary">L'Artisan Baker</div>
+<div class="flex flex-wrap justify-center gap-gutter">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-body-md text-body-md" href="#">Press Kit</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-body-md text-body-md" href="#">Wholesale</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant opacity-80">
+                © 2024 L'Artisan Baker. Crafted with patience.
+            </div>
+</div>
+</footer>
+<script>
+        // Reveal on scroll logic
+        const reveals = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(reveal => revealObserver.observe(reveal));
+
+        // Sticky header transparency effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+                header.classList.remove('py-4');
+                header.classList.add('py-2');
+            } else {
+                header.classList.remove('shadow-sm');
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+
+        // Simple mouse tracking for hero subtle movement
+        const hero = document.querySelector('section:first-of-type div[style*="background-image"]');
+        window.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) / 100;
+            const moveY = (e.clientY - window.innerHeight / 2) / 100;
+            if (hero) {
+                hero.style.transform = `scale(1.05) translate(${moveX}px, ${moveY}px)`;
+            }
+        });
+    </script>
+</body></html>
