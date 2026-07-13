@@ -245,9 +245,9 @@ function ContactFormAndCalendar() {
             </div>
             
             <Button
-              variant="primary"
+              variant="dark"
               onClick={handleBookingConfirm}
-              className="w-full py-4 bg-honey-gold text-primary font-bold shadow-md"
+              className="w-full py-4 font-bold shadow-md"
               isLoading={isBookingSubmitting}
             >
               Confirm Consultation
